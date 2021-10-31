@@ -35,6 +35,8 @@ void GetViewPoint(ULocalPlayer* thisLocalPlayer, FMinimalViewInfo* OutViewInfo, 
 
     APawn* AcknowledgedPawn = PlayerController->AcknowledgedPawn;
     if (!AcknowledgedPawn) return;
+    
+    // etc...
 
 }   
 
