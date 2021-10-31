@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{c17ffd17-b995-4ad9-9999-f4357107ac69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\MinHook">
+      <UniqueIdentifier>{08654838-c961-40f4-87c6-f3723a79d1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\MinHook\hde">
+      <UniqueIdentifier>{e74ba757-abfa-4632-8fe4-985de370fefc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MinHook\buffer.c">
+      <Filter>Utilities\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\hook.c">
+      <Filter>Utilities\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\trampoline.c">
+      <Filter>Utilities\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\hde\hde32.c">
+      <Filter>Utilities\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHook\hde\hde64.c">
+      <Filter>Utilities\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MinHook\buffer.h">
+      <Filter>Utilities\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\MinHook.h">
+      <Filter>Utilities\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\trampoline.h">
+      <Filter>Utilities\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\hde32.h">
+      <Filter>Utilities\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\hde64.h">
+      <Filter>Utilities\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\pstdint.h">
+      <Filter>Utilities\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\table32.h">
+      <Filter>Utilities\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\hde\table64.h">
+      <Filter>Utilities\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="UnrealEngine.h" />
+    <ClInclude Include="PatternScan.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
