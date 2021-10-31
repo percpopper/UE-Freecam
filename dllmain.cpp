@@ -44,6 +44,8 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 
     std::uintptr_t GetViewPointAddress = PatternScan((uintptr_t)GetModuleHandleA(NULL), "4C 8B DC 49 89 5B 20 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 41 0F");
     if (!GetViewPointAddress) return FALSE;
+    
+    // https://github.com/TsudaKageyu/minhook
 
     if (MH_Initialize() != MH_STATUS::MH_OK) return FALSE;
 
